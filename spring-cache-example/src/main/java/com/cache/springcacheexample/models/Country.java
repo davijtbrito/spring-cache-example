@@ -14,11 +14,9 @@ public class Country {
     private Integer id;
     
     @Column(nullable = false)
-    private String name;    
+    private String name;        
 
-    public Country(Integer id, String name) {
-        this.id = id;
-        this.name = name;
+    public Country() {
     }
 
     public Integer getId() {
@@ -27,6 +25,14 @@ public class Country {
 
     public String getName() {
         return name;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     
